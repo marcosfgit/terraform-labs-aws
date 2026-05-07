@@ -6,27 +6,25 @@ This repository documents the progressive implementation of Infrastructure as Co
 
 The project is structured into evolutionary milestones, each focusing on core engineering principles:
 
-### [LAB-01] AWS Provider Configuration
-* Initializing Terraform and configuring the AWS Provider.
-* Understanding the Terraform workflow: `init`, `plan`, and `apply`.
+### 🚀 [LAB-01-AWS] Getting Started with Terraform Configuration with AWS
+* **Overview:** Setting up the required file structure and implementing the AWS provider configuration.
+* **Key Concepts:** Mastering the Terraform workflow by formatting (`terraform fmt`), validating (`terraform validate`), and initializing (`terraform init`) the working directory.
 
-### [LAB-02] Resource Provisioning
-* Deploying the first AWS resources (e.g., EC2 instances, S3 buckets).
-* Understanding resource syntax and provider documentation.
+### 🏗️ [LAB-02-AWS] Creating Your First AWS Resource
+* **Overview:** Provisioning the first real resource: a **Virtual Private Cloud (VPC)**, while implementing the full resource lifecycle.
+* **Key Concepts:** Resource blocks, managing AWS credentials via environment variables, and essential management commands (`plan` and `apply`).
 
-### [LAB-03] Modularization: Variables & Outputs
-* **DRY Principle:** Implementing input variables to make code reusable and dynamic.
-* **Output Values:** Extracting essential resource information (IPs, IDs) for post-deployment use.
+### ⚙️ [LAB-03-AWS] Working with Variables and Outputs
+* **Overview:** Enhancing the VPC configuration by implementing variables and outputs for increased flexibility and reusability.
+* **Key Concepts:** Variable precedence, input variable definitions, and utilizing **Output Values** to extract and display critical resource information.
 
-### [LAB-04] Dependency Management & Scale
-* Managing multiple resources (VPCs, Subnets, Security Groups).
-* Implementing implicit and explicit dependencies (`depends_on`).
-* Orchestrating interconnected cloud services.
+### 🔗 [LAB-04-AWS] Managing Multiple Resources and Dependencies
+* **Overview:** Expanding the network infrastructure with interconnected resources including subnets, route tables, and security groups.
+* **Key Concepts:** Understanding how Terraform orchestrates resource dependencies and managing more complex cloud architectures.
 
-### [LAB-05] Advanced Lifecycle & State Management
-* **State Persistence:** Deep dive into `terraform.tfstate` and its importance in collaborative environments.
-* **Data Sources:** Querying existing AWS infrastructure to use external data within the configuration.
-* **CLI Operations:** Mastering advanced commands for resource inspection and state manipulation.
+### 🧠 [LAB-05-AWS] Working with State, Data Sources, and CLI Commands
+* **Overview:** A deep dive into Terraform state persistence, querying existing AWS infrastructure, and advanced CLI operations.
+* **Key Concepts:** Managing the `terraform.tfstate` file, using **Data Sources** for dynamic environment-aware configurations, and advanced state manipulation.
 
 ## 🛠 Tech Stack
 * **Tool:** Terraform (HashiCorp)
