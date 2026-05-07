@@ -26,6 +26,10 @@ The project is structured into evolutionary milestones, each focusing on core en
 * **Overview:** A deep dive into Terraform state persistence, querying existing AWS infrastructure, and advanced CLI operations.
 * **Key Concepts:** Managing the `terraform.tfstate` file, using **Data Sources** for dynamic environment-aware configurations, and advanced state manipulation.
 
+### ☁️ [BONUS] Remote State Configuration & Backend Management
+* **Overview:** Transitioning from local state storage to a centralized **Remote Backend** using Amazon S3.
+* **Key Concepts:** Configuring the `backend "s3"` block, state persistence in the cloud, and implementing **State Locking** (`use_lockfile`) to prevent concurrent execution conflicts.
+
 ## 🛠 Tech Stack
 * **Tool:** Terraform (HashiCorp)
 * **Cloud Provider:** AWS (Amazon Web Services)
