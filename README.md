@@ -34,6 +34,14 @@ The project is structured into evolutionary milestones, each focusing on core en
 * **Overview:** Implementing **Local Values** to eliminate code redundancy and centralize repetitive logic within Terraform configurations.
 * **Key Concepts:** Utilizing `locals` blocks for computed values, simplifying complex expressions, and enhancing code maintainability through the DRY (Don't Repeat Yourself) principle.
 
+### 🔢 [LAB-08-AWS] Scaling Infrastructure with the Count Meta-Argument
+* **Overview:** Efficiently scaling cloud resources by implementing the `count` meta-argument to manage multiple similar instances within a single resource block.
+* **Key Concepts:** Utilizing `count.index` for resource differentiation, refactoring individual resource blocks into scalable loops, and managing resource arrays to optimize code dry-run and deployment.
+
+### 🔄 [LAB-09-AWS] Advanced Resource Mapping with For_Each
+* **Overview:** Implementing the `for_each` meta-argument to manage complex resource sets using maps and sets, providing more granular control over resource identification.
+* **Key Concepts:** Understanding the critical architectural differences between `count` and `for_each`, utilizing `each.key` and `each.value` for dynamic configuration, and mastering iteration strategies for robust, maintainable infrastructure.
+
 ### ☁️ [BONUS] Remote State Configuration & Backend Management
 * **Overview:** Transitioning from local state storage to a centralized **Remote Backend** using Amazon S3.
 * **Key Concepts:** Configuring the `backend "s3"` block, state persistence in the cloud, and implementing **State Locking** (`use_lockfile`) to prevent concurrent execution conflicts.
