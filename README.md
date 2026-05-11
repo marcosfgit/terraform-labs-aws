@@ -30,6 +30,10 @@ The project is structured into evolutionary milestones, each focusing on core en
 * **Overview:** Transforming static configurations into flexible infrastructure by refactoring hardcoded values into dynamic components.
 * **Key Concepts:** Code refactoring best practices, implementing **String Interpolation**, and leveraging advanced **Data Sources** for environment-aware resource definitions.
 
+### 🧩 [LAB-07-AWS] Simplifying Code with Local Values
+* **Overview:** Implementing **Local Values** to eliminate code redundancy and centralize repetitive logic within Terraform configurations.
+* **Key Concepts:** Utilizing `locals` blocks for computed values, simplifying complex expressions, and enhancing code maintainability through the DRY (Don't Repeat Yourself) principle.
+
 ### ☁️ [BONUS] Remote State Configuration & Backend Management
 * **Overview:** Transitioning from local state storage to a centralized **Remote Backend** using Amazon S3.
 * **Key Concepts:** Configuring the `backend "s3"` block, state persistence in the cloud, and implementing **State Locking** (`use_lockfile`) to prevent concurrent execution conflicts.
