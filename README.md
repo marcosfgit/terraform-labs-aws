@@ -42,6 +42,14 @@ The project is structured into evolutionary milestones, each focusing on core en
 * **Overview:** Implementing the `for_each` meta-argument to manage complex resource sets using maps and sets, providing more granular control over resource identification.
 * **Key Concepts:** Understanding the critical architectural differences between `count` and `for_each`, utilizing `each.key` and `each.value` for dynamic configuration, and mastering iteration strategies for robust, maintainable infrastructure.
 
+### 📦 [LAB-10-AWS] Leveraging the Terraform Registry and Public Modules
+* **Overview:** Accelerating infrastructure deployment by integrating verified public modules from the official Terraform Registry to provision standardized resources.
+* **Key Concepts:** Public module consumption, configuring input arguments for third-party modules, and understanding how public abstractions streamline complex resource configurations.
+
+### 🧱 [LAB-11-AWS] Structuring Reusable Infrastructure with Local Modules
+* **Overview:** Designing, building, and sourcing custom **Local Modules** to encapsulate corporate architecture standards and promote code reusability across environments.
+* **Key Concepts:** Custom module architecture, defining input variables and outputs within child modules, data passing between root and child modules, and repository organization best practices.
+
 ### ☁️ [BONUS] Remote State Configuration & Backend Management
 * **Overview:** Transitioning from local state storage to a centralized **Remote Backend** using Amazon S3.
 * **Key Concepts:** Configuring the `backend "s3"` block, state persistence in the cloud, and implementing **State Locking** (`use_lockfile`) to prevent concurrent execution conflicts.
